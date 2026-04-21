@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Auto Reload 設定</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    label {
+      display: block;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Auto Reload 設定</h1>
+  <label>
+    リロード間隔（秒）:
+    <input type="number" id="interval" min="1" value="10">
+  </label>
+  <button id="save">保存</button>
+  <p id="status"></p>
+
+  <script src="options.js"></script>
+</body>
+</html>

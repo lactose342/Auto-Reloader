@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Reloader",
+  "version": "1.0",
+  "description": "ページ上のトグルで自動リロードを制御します。",
+  "permissions": ["scripting", "activeTab", "storage"],
+  "action": {
+    "default_title": "Auto Reloader",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["toggle.css"]
+    }
+  ],
+  "options_page": "options.html",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
